@@ -1037,4 +1037,10 @@ vim.opt.expandtab = true
 vim.opt.autoindent = true
 -- Smartly increase/decrease indentation based on C-style syntax (like curly braces)
 vim.opt.smartindent = true
+-- No wrapping
+vim.opt.wrap = false
+----
+
+-- user.appearance
+require('user.appearance').setup()
 ----
