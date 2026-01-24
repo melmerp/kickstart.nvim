@@ -47,6 +47,7 @@ appearance.setup = function()
   -- Manually trigger once to apply to current session
   vim.cmd('colorscheme ' .. (vim.g.colors_name or 'default'))
   ----
+  vim.cmd [[highlight CursorLine guibg=#1a1a1a]] -- Example terminal color name
 end
 
 return appearance
