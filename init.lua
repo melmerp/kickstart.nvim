@@ -906,7 +906,7 @@ require('lazy').setup({
     priority = 1000,
     config = function()
       require('catppuccin').setup {
-        transparent_background = true,
+        transparent_background = false,
       }
       vim.cmd.colorscheme 'catppuccin-mocha'
     end,
@@ -1051,6 +1051,10 @@ vim.opt.autoindent = true
 vim.opt.smartindent = true
 -- No wrapping
 vim.opt.wrap = false
+-- virtual edit in block mode
+vim.opt.virtualedit = 'block'
+-- more colors!
+vim.opt.termguicolors = true
 ----
 
 -- user.appearance
